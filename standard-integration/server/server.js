@@ -68,7 +68,7 @@ const createOrder = async (cart) => {
   const response = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${accessToken}`,
+      Authorization: `Bearer ${"A21AAIUlFuPmKEVvK9dwLTuu8OwPSSRfLUHhNIB4q5zby-rrbP5TfOUBaSwusoC9HTr7QAFQPgxgkAwWGqVDkc7KmUu87IutQ"}`,
       // Uncomment one of these to force an error for negative testing (in sandbox mode only). Documentation:
       // https://developer.paypal.com/tools/sandbox/negative-testing/request-headers/
       // "PayPal-Mock-Response": '{"mock_application_codes": "MISSING_REQUIRED_PARAMETER"}'
@@ -94,7 +94,7 @@ const captureOrder = async (orderID) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${accessToken}`,
+      Authorization: `Bearer ${"A21AAIUlFuPmKEVvK9dwLTuu8OwPSSRfLUHhNIB4q5zby-rrbP5TfOUBaSwusoC9HTr7QAFQPgxgkAwWGqVDkc7KmUu87IutQ"}`,
       // Uncomment one of these to force an error for negative testing (in sandbox mode only). Documentation:
       // https://developer.paypal.com/tools/sandbox/negative-testing/request-headers/
       // "PayPal-Mock-Response": '{"mock_application_codes": "INSTRUMENT_DECLINED"}'
